@@ -1,0 +1,57 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+form {
+  width: 200px;
+  margin: 20px auto;
+}
+input {
+  width: 100%;
+  padding: 10px;
+}
+.poke-card {
+  position: relative;
+  height: fit-content;
+  max-width: 300px;
+  border-radius: 5px;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.poke-card::before {
+  content: "";
+  background: radial-gradient(black, 33%, transparent 33%);
+  background-size: 3px 3px;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: -1;
+}
+.img-container {
+  position: relative;
+  width: 100%;
+  margin: 10px auto;
+}
+.poke-stats div {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 6px;
+  font-size: 18px;
+}
+.poke-types div {
+  padding: 6px;
+  margin: 6px;
+  border-radius: 5px;
+  border: 1px dashed black;
+}
+.poke-img {
+  width: 190px;
+  border-radius: 50%;
+}
