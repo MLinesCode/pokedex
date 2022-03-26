@@ -27,13 +27,19 @@
   </head>
   <body>
     <main>
-      <h1>Pokedex</h1>
+      <header>
+        <div class="light">
+          <figure></figure>
+          <div class="light-container">
+            <figure class="item a"></figure>
+            <figure class="item b"></figure>
+            <figure class="item b"></figure>
+          </div>
+        </div>
+      </header>
       <section>
-        <form action="" onsubmit="searchPokemon(event)">
-          <input type="text" name="pokemon" autocomplete="off" />
-        </form>
         <div data-poke-card class="poke-card">
-          <div data-poke-name>Pokedex</div>
+          <div data-poke-name>Pokemon</div>
           <div data-poke-img-container class="img-container">
             <img
               data-poke-img
@@ -46,6 +52,30 @@
           <div data-poke-types class="poke-types"></div>
           <div data-poke-stats class="poke-stats"></div>
         </div>
+      </section>
+      <section>
+        <div class="controls">
+          <button
+            type="button"
+            value="Boton para actualizar"
+            onclick="window.location.reload()"
+          >
+            Reset
+          </button>
+          <div class="button a"></div>
+          <div class="button b"></div>
+        </div>
+        <div class="cruceta-container">
+          <div class="cruceta"></div>
+        </div>
+        <form action="" onsubmit="searchPokemon(event)">
+          <input
+            type="text"
+            name="pokemon"
+            autocomplete="off"
+            placeholder="Introduce un pokemon"
+          />
+        </form>
       </section>
     </main>
   </body>
