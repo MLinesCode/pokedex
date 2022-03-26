@@ -175,3 +175,13 @@ main {
   width: 100px;
   border-radius: 12px;
 }
+
+@media screen and (min-width: 650px) {
+  .poke-menu {
+    display: flex;
+    padding: 30px;
+  }
+  .poke-container {
+    width: 50%;
+  }
+}
