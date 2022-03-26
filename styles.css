@@ -153,9 +153,9 @@ main {
   background-color: hsla(204, 99%, 26%, 0.993);
 }
 .cruceta-container {
-  position: absolute;
-  right: 3.4rem;
-  top: 29rem;
+  position: relative;
+  right: -2.4rem;
+  top: 2rem;
 }
 .cruceta {
   margin: auto;
